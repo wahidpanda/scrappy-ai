@@ -7,8 +7,8 @@ amazon_scraper = AutoScraper()
 amazon_scraper.load('amazon-search')
 
 def get_amazon_result(search_query):
-    url = 'https://www.amazon.in/s?k=%s' % search_query
-    result = amazon_scraper.get_result_similar(url, group_by_alias=True)
+    api = 'https://www.amazon.in/s?k=%s' % search_query
+    result = amazon_scraper.get_result_similar(api, group_by_alias=True)
     return result
 
 
